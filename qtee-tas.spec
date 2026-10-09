@@ -29,15 +29,15 @@ chipset targets provided by the upstream source.
 %install
 for chipdir in ta/*/; do
     chip=$(basename "${chipdir}")
-    install -d %{buildroot}/lib/qtee-tas/${chip}
-    install -m 644 "${chipdir}"*.mbn %{buildroot}/lib/qtee-tas/${chip}/
+    install -d %{buildroot}%{_prefix}/lib/qtee-tas/${chip}
+    install -m 644 "${chipdir}"*.mbn %{buildroot}%{_prefix}/lib/qtee-tas/${chip}/
 done
 
 %files
 %license LICENSE.txt
 %license NO.LOGIN.BINARY.LICENSE.QTI.pdf
 %doc README.md
-/lib/qtee-tas
+%{_prefix}/lib/qtee-tas/*
 
 
 %changelog
