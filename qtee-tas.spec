@@ -1,6 +1,6 @@
 Name:           qtee-tas
-Version:        0.1.0
-Release:        1%{?dist}
+Version:        1.0.0
+Release:        1.qli%{?dist}
 Summary:        Qualcomm TEE Trusted Application binaries
 License:        BSD-3-Clause AND LicenseRef-Qualcomm-No-Login-Binary-QTI
 URL:            https://github.com/qualcomm/qtee-tas
@@ -37,9 +37,14 @@ done
 %license LICENSE.txt
 %license NO.LOGIN.BINARY.LICENSE.QTI.pdf
 %doc README.md
+%doc NOTICE
 %{_prefix}/lib/qtee-tas/*
 
 
 %changelog
+* Fri Oct 23 2026 Abhinaba Rakshit <abhinaba.rakshit@oss.qualcomm.com> - 1.0.0-1.qli
+- Update to upstream v1.0.0
+- Add NOTICE file into docs
+
 * Tue Sep 22 2026 Abhinaba Rakshit <abhinaba.rakshit@oss.qualcomm.com> - 0.1.0-1
 - Initial RPM package with upstream v0.1.0

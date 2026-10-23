@@ -19,7 +19,7 @@ stack.
 | File | Purpose |
 |---|---|
 | [`qtee-tas.spec`](qtee-tas.spec) | RPM spec for `qtee-tas.spec`. Installs the Qualcomm TEE Trusted Applications for multiple targets inline in `%install`. |
-| [`sources`](sources) | dist-git checksum pointer for the upstream `v0.1.0` release tarball (SHA512). The tarball itself is never committed — see [`docs/workflows.md`](docs/workflows.md) for the lookaside-cache model. |
+| [`sources`](sources) | dist-git checksum pointer for the upstream `v1.0.0` release tarball (SHA512). The tarball itself is never committed — see [`docs/workflows.md`](docs/workflows.md) for the lookaside-cache model. |
 | [`.github/workflows/`](.github/workflows) | build-on-pr.yml, pkg-release.yml CI workflow files. |
 
 ## Getting started
